@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = "Sobre Mi";
 
@@ -39,9 +41,7 @@ const skillColor = "green";
         </style>
 	</head>
 	<body>
-        <a href="/">Inicio</a>
-        <a href="/about/">Sobre Mi</a>
-        <a href="/blog/">Blog</a>
+        <Header />
 
 		<h1>{pageTitle}</h1>
 		<p>Datos sobre mi:</p>
@@ -62,5 +62,10 @@ const skillColor = "green";
         {finished && <p>He terminado este tutorial</p>}
 
         {goal === 3 ? <p>Mi objetivo es terminar en 3 dias</p> : <p>Mi objetivo no son 3 dias.</p>}
+
+        <Footer />
+        <script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
