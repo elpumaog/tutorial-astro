@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Mi tercera publicacion en el blog'
 author: 'El AstroPuma'
 description: 'Me flipa Astro'
